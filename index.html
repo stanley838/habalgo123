@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabalGo - Rider Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-box" id="loginBox">
+            <h1>Habal<span>Go</span></h1>
+            <p>Rider Login Portal</p>
+
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+
+            <p id="message"></p>
+        </div>
+
+        <div class="profile-box hidden" id="profileBox">
+            <h1>Habal<span>Go</span></h1>
+            <h2>Rider Profile</h2>
+
+            <div class="avatar">🏍️</div>
+
+            <h3 id="riderName">Juan Dela Cruz</h3>
+            <p>Registered Habal-habal Rider</p>
+
+            <div class="profile-info">
+                <p><strong>Email:</strong> <span id="riderEmail"></span></p>
+                <p><strong>Status:</strong> <span class="status">Active</span></p>
+                <p><strong>Registration:</strong> Verified</p>
+            </div>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
